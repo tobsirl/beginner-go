@@ -9,4 +9,8 @@ func main() {
 
 	age := 30
 	fmt.Printf("You are %d years old.\n", age)
+
+	var city string
+	city = "New York"
+	fmt.Printf("You live in %s.\n", city)
 }
