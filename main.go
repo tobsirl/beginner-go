@@ -23,4 +23,11 @@ func main() {
 		isEmployed bool   = true
 	)
 	fmt.Printf("You are a %s with a salary of $%d. Employed: %t\n", profession, salary, isEmployed)
+
+	// Zero values
+	var defaultInt int
+	var defaultFloat float64
+	var defaultString string
+	var defaultBool bool
+	fmt.Printf("Zero values: int: %d, float: %f, string: '%s', bool: %t\n", defaultInt, defaultFloat, defaultString, defaultBool)
 }
