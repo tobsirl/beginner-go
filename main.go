@@ -16,4 +16,11 @@ func main() {
 
 	var country, continent string = "USA", "North America"
 	fmt.Printf("You live in %s, %s.\n", country, continent)
+
+	var (
+		profession string = "Software Engineer"
+		salary    int    = 100000
+		isEmployed bool   = true
+	)
+	fmt.Printf("You are a %s with a salary of $%d. Employed: %t\n", profession, salary, isEmployed)
 }
