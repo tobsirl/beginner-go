@@ -30,4 +30,19 @@ func main() {
 	var defaultString string
 	var defaultBool bool
 	fmt.Printf("Zero values: int: %d, float: %f, string: '%s', bool: %t\n", defaultInt, defaultFloat, defaultString, defaultBool)
+
+	// Constants
+	const pi float64 = 3.14
+	fmt.Printf("Value of pi: %f\n", pi)
+
+	const (
+		Monday	= iota // 0
+		Tuesday	// 1
+		Wednesday	// 2
+		Thursday	// 3
+		Friday	// 4
+		Saturday	// 5
+		Sunday	// 6	
+	)
+	fmt.Printf("Days of the week: %d, %d, %d, %d, %d, %d, %d\n", Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
 }
