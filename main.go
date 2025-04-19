@@ -84,6 +84,18 @@ func main() {
 	default:
 		fmt.Println("Invalid day.")
 	}
+
+	// for loop
+	for i := 1; i <= 5; i++ {
+		fmt.Printf("Iteration %d\n", i)
+	}
+
+	// while loop (using for)
+	i := 1
+	for i <= 5 {
+		fmt.Printf("While loop iteration %d\n", i)
+		i++
+	}
 }
 
 
