@@ -46,4 +46,11 @@ func main() {
 	)
 	fmt.Printf("Days of the week: %d, %d, %d, %d, %d, %d, %d\n", Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
 
+	// functions
+	result := add(5, 10)
+	fmt.Printf("The sum of 5 and 10 is: %d\n", result)
+}
+
+func add(a int, b int) int {
+	return a + b
 }
