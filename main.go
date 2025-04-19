@@ -52,7 +52,18 @@ func main() {
 
 	sum, product := calculateSumAndProduct(3, 4)
 	fmt.Printf("The sum of 3 and 4 is: %d, and the product is: %d\n", sum, product)
+
+	// Control structures
+	// if-else
+	if age < 18 {
+		fmt.Println("You are a minor.")
+	} else if age >= 18 && age < 65 {
+		fmt.Println("You are an adult.")
+	} else {
+		fmt.Println("You are a senior citizen.")
+	}
 }
+
 
 func add(a int, b int) int {
 	return a + b
