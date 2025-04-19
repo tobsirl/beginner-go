@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// Variable declaration
@@ -96,6 +98,10 @@ func main() {
 		fmt.Printf("While loop iteration %d\n", i)
 		i++
 	}
+
+	// Arrays
+	numbers := [5]int{1, 2, 3, 4, 5}
+	fmt.Println("Array of numbers:", numbers)
 }
 
 
