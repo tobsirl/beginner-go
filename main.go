@@ -49,8 +49,17 @@ func main() {
 	// functions
 	result := add(5, 10)
 	fmt.Printf("The sum of 5 and 10 is: %d\n", result)
+
+	sum, product := calculateSumAndProduct(3, 4)
+	fmt.Printf("The sum of 3 and 4 is: %d, and the product is: %d\n", sum, product)
 }
 
 func add(a int, b int) int {
 	return a + b
+}
+
+func calculateSumAndProduct(a, b int) (int, int) {
+	sum := a + b
+	product := a * b
+	return sum, product
 }
