@@ -19,7 +19,7 @@ func main() {
 
 	var (
 		profession string = "Software Engineer"
-		salary    int    = 100000
+		salary     int    = 100000
 		isEmployed bool   = true
 	)
 	fmt.Printf("You are a %s with a salary of $%d. Employed: %t\n", profession, salary, isEmployed)
@@ -36,13 +36,14 @@ func main() {
 	fmt.Printf("Value of pi: %f\n", pi)
 
 	const (
-		Monday	= iota // 0
-		Tuesday	// 1
-		Wednesday	// 2
-		Thursday	// 3
-		Friday	// 4
-		Saturday	// 5
-		Sunday	// 6	
+		Monday    = iota // 0
+		Tuesday          // 1
+		Wednesday        // 2
+		Thursday         // 3
+		Friday           // 4
+		Saturday         // 5
+		Sunday           // 6
 	)
 	fmt.Printf("Days of the week: %d, %d, %d, %d, %d, %d, %d\n", Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
+
 }
