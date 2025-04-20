@@ -104,7 +104,7 @@ func main() {
 	fmt.Println("Array of numbers:", numbers)
 
 	// Slices
-	allNumbers := numbers[:] // Slicing the array
+	allNumbers := numbers[:]   // Slicing the array
 	firstThree := numbers[0:3] // Slicing the first three elements
 	fmt.Println("First three numbers:", firstThree)
 	fmt.Println("Slice of numbers:", allNumbers)
@@ -118,8 +118,27 @@ func main() {
 	moreFruits := []string{"Mango", "Orange"}
 	fruits = append(fruits, moreFruits...)
 	fmt.Println("Extended slice of fruits:", fruits)
-}
 
+	// Maps
+	capitalCities := map[string]string{
+		"USA":    "Washington, D.C.",
+		"Canada": "Ottawa",
+		"Mexico": "Mexico City",
+	}
+	// Accessing map values
+	fmt.Println("Capital of USA:", capitalCities["USA"])
+	// Adding a new key-value pair
+	capitalCities["Germany"] = "Berlin"
+	fmt.Println("Capital cities:", capitalCities)
+	capitalCities["France"] = "Paris"
+	// Iterating over a map
+	for country, capital := range capitalCities {
+		fmt.Printf("The capital of %s is %s.\n", country, capital)
+	}
+	// Deleting a key-value pair
+	delete(capitalCities, "Mexico")
+	fmt.Println("Updated capital cities:", capitalCities)
+}
 
 func add(a int, b int) int {
 	return a + b
