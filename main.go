@@ -168,6 +168,29 @@ func main() {
 	}
 	fmt.Printf("Anonymous Person: Name: %s, Age: %d, Country: %s\n", anonymousPerson.Name, anonymousPerson.Age, anonymousPerson.Country)
 
+	type Address struct {
+		Street  string
+		City    string
+		State   string
+		Country string
+	}
+
+	type Contact struct {
+		Email   string
+		Phone   string
+		Address Address
+	}
+	contact := Contact{
+		Email: "paul@example.com",
+		Phone: "123-456-7890",
+		Address: Address{
+			Street:  "123 Main St",
+			City:    "Los Angeles",
+			State:   "CA",
+			Country: "USA",
+		},
+	}
+	fmt.Printf("Contact: Email: %s, Phone: %s, Address: %s, %s, %s, %s\n", contact.Email, contact.Phone, contact.Address.Street, contact.Address.City, contact.Address.State, contact.Address.Country)
 }
 
 func add(a int, b int) int {
