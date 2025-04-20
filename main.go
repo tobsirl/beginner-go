@@ -156,6 +156,18 @@ func main() {
 	// Accessing struct fields
 	fmt.Println("Person's name:", person.Name)
 
+	// Anonymous structs
+	anonymousPerson := struct {
+		Name    string
+		Age     int
+		Country string
+	}{
+		Name:    "Bob",
+		Age:     35,
+		Country: "UK",	
+	}
+	fmt.Printf("Anonymous Person: Name: %s, Age: %d, Country: %s\n", anonymousPerson.Name, anonymousPerson.Age, anonymousPerson.Country)
+
 }
 
 func add(a int, b int) int {
