@@ -102,6 +102,15 @@ func main() {
 	// Arrays
 	numbers := [5]int{1, 2, 3, 4, 5}
 	fmt.Println("Array of numbers:", numbers)
+
+	// Slices
+	allNumbers := numbers[:] // Slicing the array
+	firstThree := numbers[0:3] // Slicing the first three elements
+	fmt.Println("First three numbers:", firstThree)
+	fmt.Println("Slice of numbers:", allNumbers)
+	// Appending to a slice
+	allNumbers = append(allNumbers, 6, 7, 8)
+	fmt.Println("Appended slice of numbers:", allNumbers)
 }
 
 
