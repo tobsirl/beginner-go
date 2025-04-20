@@ -4,6 +4,13 @@ import (
 	"fmt"
 )
 
+// Structs
+type Person struct {
+	Name    string
+	Age     int
+	Country string
+}
+
 func main() {
 	// Variable declaration
 	var name string = "John Doe"
@@ -138,6 +145,17 @@ func main() {
 	// Deleting a key-value pair
 	delete(capitalCities, "Mexico")
 	fmt.Println("Updated capital cities:", capitalCities)
+
+	// Structs
+	person := Person{
+		Name:    "Alice",
+		Age:     28,
+		Country: "Canada",
+	}
+	fmt.Printf("Person: Name: %s, Age: %d, Country: %s\n", person.Name, person.Age, person.Country)
+	// Accessing struct fields
+	fmt.Println("Person's name:", person.Name)
+
 }
 
 func add(a int, b int) int {
