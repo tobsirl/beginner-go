@@ -111,6 +111,10 @@ func main() {
 	// Appending to a slice
 	allNumbers = append(allNumbers, 6, 7, 8)
 	fmt.Println("Appended slice of numbers:", allNumbers)
+
+	fruits := []string{}
+	fruits = append(fruits, "Apple", "Banana", "Cherry")
+	fmt.Println("Slice of fruits:", fruits)
 }
 
 
