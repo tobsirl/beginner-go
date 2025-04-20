@@ -115,6 +115,9 @@ func main() {
 	fruits := []string{}
 	fruits = append(fruits, "Apple", "Banana", "Cherry")
 	fmt.Println("Slice of fruits:", fruits)
+	moreFruits := []string{"Mango", "Orange"}
+	fruits = append(fruits, moreFruits...)
+	fmt.Println("Extended slice of fruits:", fruits)
 }
 
 
