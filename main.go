@@ -203,6 +203,11 @@ func main() {
 	fmt.Println("Memory address of x:", &x)
 	fmt.Println("Pointer to x:", ptr)
 	fmt.Println("Value at pointer ptr:", *ptr)
+	*ptr = 20
+	fmt.Println("New value of x:", x)
+	fmt.Println("Memory address of x:", &x)
+	fmt.Println("Memory address of x:", ptr)
+	fmt.Println("Value at pointer ptr:", *ptr)
 }
 
 func add(a int, b int) int {
