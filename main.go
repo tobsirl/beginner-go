@@ -196,6 +196,13 @@ func main() {
 	fmt.Println("Before modifying name:", person.Name)
 	modifyPersonName(&person, "Charlie")
 	fmt.Println("After modifying name:", person.Name)
+
+	x := 10
+	ptr := &x
+	fmt.Println("Value of x:", x)
+	fmt.Println("Memory address of x:", &x)
+	fmt.Println("Pointer to x:", ptr)
+	fmt.Println("Value at pointer ptr:", *ptr)
 }
 
 func add(a int, b int) int {
