@@ -220,8 +220,7 @@ func calculateSumAndProduct(a, b int) (int, int) {
 	return sum, product
 }
 
-func modifyPersonName(person *Person, newName string) {
-	person.Name = newName
+func (person Person)modifyPersonName() {
 	fmt.Println("Inside modifyPersonName function:", person.Name)
 	fmt.Printf("Memory address of person: %p\n", person)
 	fmt.Printf("Memory address of person.Name: %p\n", &person.Name)
