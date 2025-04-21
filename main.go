@@ -164,7 +164,7 @@ func main() {
 	}{
 		Name:    "Bob",
 		Age:     35,
-		Country: "UK",	
+		Country: "UK",
 	}
 	fmt.Printf("Anonymous Person: Name: %s, Age: %d, Country: %s\n", anonymousPerson.Name, anonymousPerson.Age, anonymousPerson.Country)
 
