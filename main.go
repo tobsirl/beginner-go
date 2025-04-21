@@ -191,6 +191,11 @@ func main() {
 		},
 	}
 	fmt.Printf("Contact: Email: %s, Phone: %s, Address: %s, %s, %s, %s\n", contact.Email, contact.Phone, contact.Address.Street, contact.Address.City, contact.Address.State, contact.Address.Country)
+
+	// Pointers
+	fmt.Println("Before modifying name:", person.Name)
+	modifyPersonName(&person, "Charlie")
+	fmt.Println("After modifying name:", person.Name)
 }
 
 func add(a int, b int) int {
@@ -201,4 +206,11 @@ func calculateSumAndProduct(a, b int) (int, int) {
 	sum := a + b
 	product := a * b
 	return sum, product
+}
+
+func modifyPersonName(person *Person, newName string) {
+	person.Name = newName
+	fmt.Println("Inside modifyPersonName function:", person.Name)
+	fmt.Printf("Memory address of person: %p\n", person)
+	fmt.Printf("Memory address of person.Name: %p\n", &person.Name)
 }
